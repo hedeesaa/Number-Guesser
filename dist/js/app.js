@@ -11,7 +11,8 @@ maxNum = document.querySelector(".max-num");
 minNum.textContent = min;
 maxNum.textContent = max;
 
-gameBtn.addEventListener("click", function() {
+gameBtn.addEventListener("click", function(e) {
+  e.preventDefault();
   if (gameBtn.value === "Try Again") {
     restartGame();
   } else {
@@ -62,7 +63,7 @@ function gameAgain() {
 
 function restartGame() {
   gameBtn.value = "Submit";
-  gameBtn.style.background = "#0ed58b";
+  gameBtn.style.background = "#1b9c87";
   guessNum = 3;
   guess.disabled = false;
   guess.value = "";
