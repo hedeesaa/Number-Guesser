@@ -2,8 +2,6 @@ let min = 1,
   max = 10,
   winningNum = makeRandom(min, max);
 guessNum = 3;
-
-console.log(winningNum);
 const guess = document.querySelector("#input"),
   gameBtn = document.querySelector("#submit"),
   message = document.querySelector(".message"),
@@ -70,7 +68,6 @@ function restartGame() {
   guess.value = "";
   message.textContent = "";
   winningNum = makeRandom(min, max);
-  console.log(winningNum);
 }
 
 function makeRandom(min, max) {
