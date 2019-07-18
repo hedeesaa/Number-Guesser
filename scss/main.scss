@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(210deg, #0ed58b, #da4597);
+  background-size: 400% 400%;
+  font-family: "Trirong", serif;
+  -webkit-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 99% 0%;
+  }
+  50% {
+    background-position: 2% 100%;
+  }
+  100% {
+    background-position: 99% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 99% 0%;
+  }
+  50% {
+    background-position: 2% 100%;
+  }
+  100% {
+    background-position: 99% 0%;
+  }
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.btn {
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 3px;
+
+  .input-group {
+    margin-top: 1rem;
+
+    #input {
+      border-radius: 3px;
+      border: 1px solid rgb(148, 148, 148);
+      padding: 0.3rem 0.4rem;
+      margin-right: 0.3rem;
+      width: 50%;
+    }
+    #submit {
+      background: #1b9c87;
+      color: white;
+    }
+  }
+  .message {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    padding-left: 0.4rem;
+  }
+}
