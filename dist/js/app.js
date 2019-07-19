@@ -55,6 +55,7 @@ function showMessage(msg, color, weight) {
   message.textContent = msg;
   message.style.color = color;
   message.style.fontWeight = weight;
+  guess.style.borderColor = color;
 }
 
 function gameAgain() {
