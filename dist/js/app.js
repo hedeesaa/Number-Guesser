@@ -47,6 +47,8 @@ gameBtn.addEventListener("click", function(e) {
       }
     }
   }
+
+  guess.value = "";
 });
 
 function showMessage(msg, color, weight) {
@@ -62,13 +64,7 @@ function gameAgain() {
 }
 
 function restartGame() {
-  gameBtn.value = "Submit";
-  gameBtn.style.background = "#1b9c87";
-  guessNum = 3;
-  guess.disabled = false;
-  guess.value = "";
-  message.textContent = "";
-  winningNum = makeRandom(min, max);
+  window.location.reload();
 }
 
 function makeRandom(min, max) {
